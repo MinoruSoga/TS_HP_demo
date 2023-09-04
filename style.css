@@ -1,0 +1,303 @@
+/*
+@media以外の所は全てのサイズで読み込まれます。
+*/
+/* -----index.html Page----- */
+h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+p {
+  line-height: 2;
+
+}
+
+/* ---header---- */
+/* navbar */
+header {
+  height: 80px;
+}
+
+
+nav {
+  height: 80px;
+  /* display: table; */
+}
+
+nav .brand-logo {
+  text-align: left;
+  float: left;
+
+}
+
+nav .brand-logo img {
+  height: 66px;
+  margin-top: 7px;
+}
+
+.nav-color {
+  background-color: white;
+}
+
+nav .material-icons {
+  color: black;
+}
+
+nav .sidenav-trigger i {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+nav ul a {
+  color: black;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+.sidenav li>a {
+  font-size: 20px;
+  line-height: 60px;
+  height: 60px;
+}
+
+.sidenav li {
+  height: 60px;
+  border-bottom: 1px solid rgb(88, 88, 88, 0.32);
+}
+
+/* TOP  */
+.top img {
+  width: 100%;
+}
+
+/* clearngin */
+.cleaning .carousel {
+  /* height: 350px; */
+}
+
+.cleaning .carousel .carousel-item>img {
+  height: 300px;
+  width: 250px;
+}
+
+/* renovation */
+.renovation .carousel .carousel-item>img {
+  height: 300px;
+  width: 250px;
+}
+
+/* eternal_memorial */
+.eternal_memorial p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.eternal_memorial img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* building_material */
+
+
+/* design_and_construction */
+.design_and_construction .carousel .carousel-item>img {
+  height: 300px;
+  width: 250px;
+}
+
+/* grave */
+.grave p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.grave .carousel .carousel-item>img {
+  height: 300px;
+  width: 250px;
+}
+
+
+/* 下からフェードイン */
+.fadein-bottom {
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.fadein-bottom.active {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* ヘッダー高さ相殺 */
+.contents {
+  padding-top: 80px;
+}
+
+.cleaning {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.renovation {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.eternal_memorial {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.building_material {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.design_and_construction {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.grave {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+/* footer */
+footer {
+  background-color: black !important;
+  margin-top: 100px;
+}
+
+ul.footer-menu1 li {
+  height: 40px;
+}
+
+ul.footer-menu2 li {
+  height: 40px;
+}
+
+p.adress {
+  height: 80px;
+}
+
+p.phone {
+  margin-top: 30px;
+}
+
+#calendar .head td {
+  font-size: 12px;
+}
+
+#calendar .head th {
+  font-size: 10px;
+}
+
+#payment-stripe {
+  margin-top: 50px;
+}
+
+#payment-stripe h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#payment-stripe button {
+  /* font-size: 30px; */
+  width: 50%;
+}
+
+/* スケジュールフォーム */
+#schedule_form button {
+  margin-top: 20px;
+
+}
+
+
+@media screen and (min-width:480px) {
+
+  /*　画面サイズが480pxからはここを読み込む　*/
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+
+}
+
+@media screen and (min-width:1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .top img {
+    width: 60%;
+  }
+
+  .top .top_img {
+    text-align: center;
+  }
+
+  .slider {
+    width: 70%;
+    margin: auto;
+  }
+
+  .slider .slides li img {
+    background-repeat: no-repeat;
+    /* background-size: 100% 500px; */
+  }
+
+  /* .eternal_memorial {
+    text-align: center;
+  } */
+
+  .eternal_memorial img {
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    margin: auto;
+  }
+
+  .building_material img {
+    width: 1000px;
+    background-size: cover;
+    margin: auto;
+  }
+
+  #calendar .head td {
+    font-size: 22px;
+  }
+
+  #calendar .content td {
+    font-size: 22px;
+  }
+
+  #calendar .head th {
+    font-size: 20px;
+  }
+
+  /* スケジュールフォーム */
+  #schedule_form {
+    margin-top: 120px;
+    font-size: 40px;
+
+  }
+
+  /*　画面サイズが1024pxからはここを読み込む　*/
+}
